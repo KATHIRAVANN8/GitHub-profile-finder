@@ -20,29 +20,32 @@
 
 🗂️ 𝗙𝗢𝗟𝗗𝗘𝗥 𝗦𝗧𝗥𝗨𝗖𝗧𝗨𝗥𝗘
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📁 github-profile-finder/
+github-profile-finder/
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.ts
+├── tsconfig.json
 │
-├── 📄 index.html
-├── 📄 package.json
-├── 📄 tailwind.config.js
-├── 📄 vite.config.ts
-├── 📄 tsconfig.json
+├── public/
+│   └── favicon.ico                  # App icon
 │
-├── 📁 public/
-│   └── 🎨 favicon.ico
-│
-├── 📁 src/
-│   ├── 📁 api/
-│   │   └── github.ts             → Axios GitHub API calls
-│   ├── 📁 components/
-│   │   ├── ProfileCard.tsx       → Profile display UI
-│   │   ├── RepoList.tsx          → Repository list section
-│   │   └── SearchBar.tsx         → Username search input
-│   ├── 📁 types/
-│   │   └── github.ts             → TypeScript types (GitHubUser, GitHubRepo)
-│   ├── App.tsx                   → Core application logic
-│   ├── main.tsx                  → Entry point with ReactDOM & QueryClient
-│   └── vite-env.d.ts             → Vite-specific type declarations
+├── src/
+│   ├── api/
+│   │   └── github.ts                # Axios GitHub API calls
+│   │
+│   ├── components/
+│   │   ├── ProfileCard.tsx          # User profile display
+│   │   ├── RepoList.tsx             # Repository list section
+│   │   └── SearchBar.tsx            # GitHub username input
+│   │
+│   ├── types/
+│   │   └── github.ts                # TypeScript types for GitHubUser, GitHubRepo
+│   │
+│   ├── App.tsx                      # Main application logic
+│   ├── main.tsx                     # Entry point (ReactDOM + React Query)
+│   └── vite-env.d.ts                # Vite environment types
+
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
